@@ -56,14 +56,14 @@ class NoteById extends Component{
         } = this.state;
         return(
             <div style={{position: 'relative', margin: "auto", top: 0, left: 0, right: 0, bottom: 0}} >            
-                <h1>{title.split(' ').join('') ? title : "Untitled"} by <em> {author.split(' ').join('') ? author : "Anonymous" }</em></h1>
+                <h1 style={{fontFamily: `${"'Roboto Mono', monospace"}`}} >{title.split(' ').join('') ? title : "Untitled"} by <em style={{fontFamily: `${"'Indie Flower', cursive"}`}}> {author.split(' ').join('') ? author : "Anonymous" }</em></h1>
                 <div style={{margin: '0 auto', position: 'relative', width: '50vw', left: '0'} }>
  <Link to={`/notes/${id}/edit`} > <button>Edit Note</button></Link> {" "}
                 <button onClick={this.deleteNote} >Delete Note</button> {" "}<Link style={{ position: "relative", align: 'right', left: '100%', top: '100%'}} to={`/notes/`} > <button>Back</button></Link> 
                 <br />
                 <br />
                 <div style={{border: '1px solid #000000', margin: '0 auto', width: '50vw', paddingTop: '2em', paddingRight: '2em', paddingLeft: '2em', paddingBottom: `${noteBody.length < 500 ? 20 : 2 }em`}} >
-                    <p>{noteBody}</p>
+                    <p >{noteBody}</p>
                 </div>
               {message}
                {noteDeleted ? <Redirect to='/notes' /> : null}                

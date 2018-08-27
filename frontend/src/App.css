@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Roboto+Mono');
+body h1 {
+  font-family: 'Pacifico', cursive; 
+}
+
+body *{
+  /* font-family: 'Permanent Marker', cursive; */
+}
+
+bo
+
 .App {
   margin: 0 auto;
   text-align: center;
@@ -28,6 +40,10 @@
   display: inline;
   padding-left: 0.5em;
 }
+h1{
+  font-family: 'Pacifico', cursive;
+ 
+}
 
 .NavbarHeader{
   background-color: #3B5163;
@@ -55,7 +71,7 @@ color: white;
   padding: 2em;
   width: 150px;
   height: 150px;
-
+  font-family: 'Permanent Marker', cursive;
   
 
 }
@@ -79,6 +95,11 @@ color: white;
 .noteLink {
   text-decoration-line: none;
 }
+
+p{
+  font-family: 'Permanent Marker', cursive;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

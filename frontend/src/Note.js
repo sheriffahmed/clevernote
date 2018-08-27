@@ -46,10 +46,10 @@ class Notes extends Component {
                             <br />
                             <div className='noteGrid'>
                                 {allNotes.length > 0 ? allNotes.map((note, index) => <div>
-                                    <h3 style={{textAlign: 'center'}}>
+                                    <h3 className='titleNames' style={{textAlign: 'center', fontFamily: `${"'Roboto Mono', monospace"}`}}>
                                     {note.title.split(' ').join('') ? note.title 
                                     : 'Untitled'}</h3>
-                                    <h4 style={{textAlign: 'center'}} >by {note.author.split(' ').join('') ? note.author : 'Anonymous'} </h4> <Link className='noteLink' to={`/notes/${note.id}`}><div className='note' >
+                                    <h4 style={{textAlign: 'center', fontFamily: `${"'Indie Flower', cursive"}`}} >by {note.author.split(' ').join('') ? note.author : 'Anonymous'} </h4> <Link className='noteLink' to={`/notes/${note.id}`}><div className='note' >
                                    
 
                                         <p>{note.body.length > 50 ? note.body.substring(0, 50) + '...' : note.body}</p>
