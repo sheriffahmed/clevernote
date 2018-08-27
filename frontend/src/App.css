@@ -8,7 +8,9 @@ body *{
   /* font-family: 'Permanent Marker', cursive; */
 }
 
-bo
+body{
+  background-color: #E3F1F1
+}
 
 .App {
   margin: 0 auto;
